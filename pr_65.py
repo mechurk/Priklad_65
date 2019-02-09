@@ -47,7 +47,7 @@ def listofint (listofnum):
         quit (1)
 
 #spouštění funkcí
-list1= listofrandomnum(10,5,20)
+list1= listofrandomnum(10,-5,20)
 list2= listofrandomnum(10,5,20)
 print (list1)
 print (list2)
