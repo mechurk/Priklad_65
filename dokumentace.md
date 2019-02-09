@@ -17,6 +17,8 @@ V sekci spouštění funkcí jsou vytvořeny dva listy náhodných čísel a mez
 \
 **Výstupní data:** List obsahující průnik vstupních dat.
 \
+**Testovací data:** Jsou vytvořena a testována přímo ve skriptu.
+\
 \
 **Alternativní řešení programu:** Alternativou je použití množinové operace či logického operátoru AND (&)
 
