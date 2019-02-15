@@ -7,7 +7,9 @@ Vypracovala: Kristýna Měchurová, rok: 2019
 """
 
 import random
-#definování funkcí
+
+
+# definování funkcí
 
 def fromtxttolist(text):
     """Z textového souboru vytvoří list
@@ -28,7 +30,8 @@ def fromtxttolist(text):
         print("Unexpected error")
         raise
 
-def listofrandomnum (number, a, b):
+
+def listofrandomnum(number, a, b):
     """ Vytvoří list náhodných celých čísel.
         Vstup:  number - počet čísel v řetězci
                 a, b  - interval náhodných čísel
@@ -36,23 +39,25 @@ def listofrandomnum (number, a, b):
                  b: maximální hodnota intervalu)
         Výstup: list náhodných čísel.
                 """
-    list =[]
+    list = []
     for i in range(number):
-        randnum=random.randint(a,b)
+        randnum = random.randint(a, b)
         list.append(randnum)
     return list
 
-def intersection (list1, list2):
+
+def intersection(list1, list2):
     """ Průnik dvou listů obsahujících celá čísla.
         Vstup:  list1,list2 - list celých čísel
         Výstup: průnik vstupů ve formátu list
     """
 
-    result=[]
+    result = []
     for i in list1:
         if i in list2:
             result.append(i)
-    return (list(set(result))) #odstranění duplicit z průniku
+    return (list(set(result)))  # odstranění duplicit z průniku
+
 
 def savetotxt(result):
     """uloží list do textového dokumentu
@@ -69,10 +74,11 @@ def savetotxt(result):
 
     text_file_output.close()
 
-#spouštění funkcí
-list1= fromtxttolist("test_1.txt")
-list2= fromtxttolist("test_2.txt")
-print (list1)
-print (list2)
-result = intersection(list1,list2)
+
+# spouštění funkcí
+list1 = fromtxttolist("test_1.txt")
+list2 = fromtxttolist("test_2.txt")
+print(list1)
+print(list2)
+result = intersection(list1, list2)
 savetotxt(result)
